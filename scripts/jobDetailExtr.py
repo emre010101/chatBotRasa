@@ -4,9 +4,12 @@ import openpyxl
 from openpyxl import load_workbook
 import pandas
 import re
+from tools import trades
 
 call_details = dict()
 counter = 0
+my_dictionary = trades()
+
 
 f = open("/tmp/jobDetail.log", "w") 
 
@@ -27,7 +30,7 @@ def printWriteOut(obj, obj2 = None):
 
 def message(main):
     printWriteOut("MESSAGE",main)
-    printWriteOut("***************************")
+    #printWriteOut("***************************")
     
 def contractor(message):
     # assumption is that contract data sequence is following
@@ -38,6 +41,7 @@ def contractor(message):
     list.append('Response Time')
     list.append('Pub Number')
     list.append('Pub Name')
+    list.append('Pub Address')
     list.append('Pub Post Code')
     list.append('Pub Telephone Number')
     list.append('Placed by')
@@ -63,13 +67,39 @@ def contractor(message):
                 #possibleAnswer = btweenQuestions[0]
                 printWriteOut(list[i],contr)
                 
-    printWriteOut("***************************")
 
 def remString(main, sub):
     return main.replace(sub, ' ')
     
-for row in range(1, 200):
-    for col in sheet.iter_cols(3, 3):
+traid_id = None
+i = 1
+for row in range(1, 30):
+    printWriteOut("******************************************************")
+
+    for col in sheet.iter_cols(1, 16):
+        s = str(col[0])
+        if s.find("Cell 'Jobs'.C") != -1:
+            print(">")
+        elif  s.find("Cell 'Jobs'.P") != -1:
+            #print("processing P column")
+            traid_id = col[row].value
+            printWriteOut("potential Intent:" + my_dictionary[traid_id])
+            continue
+        elif  s.find("Cell 'Jobs'.O") != -1:
+            #print("processing P column")
+            jobDetail = col[row].value
+            if jobDetail!=None:
+                printWriteOut("\n")
+                printWriteOut(">>>JoB DETAILS:" + jobDetail)
+            continue
+        else:
+         #print("Not interesting now ")
+         continue
+        
+#        if "Cell 'Jobs'.F" in  str(col[0]) :
+#            traid_id = col[row].value
+#            print(traid_id)
+#            continue
 
         if (col[row].value==None):
             continue
@@ -135,7 +165,7 @@ for row in range(1, 200):
 
         for i in range(len(my_information)):
             if i < len(my_information) -1:
-                printWriteOut("question:", my_information[i])
+                printWriteOut("question", my_information[i])
                 regx = fr'{re.escape(my_information[i])}(.*?){re.escape(my_information[i+1])}'  #working 
                 
                 btweenQuestions = re.findall(regx, (col[row].value))
@@ -158,13 +188,13 @@ for row in range(1, 200):
                         # result = re.search(btweenQuestions[0], ss)
                         # if(result):
                         answer = btweenQuestions[0].split(descr[0][0])
-                        printWriteOut("answer:", answer[0])
+                        printWriteOut("answer", answer[0])
                         printWriteOut(descr[0][0])
                         printWriteOut(descr[0][1])
                         
                     else:
                         #print("possible answer:",btweenQuestions[0])
-                        printWriteOut("possible answer:",btweenQuestions[0])
+                        printWriteOut("possible answer",btweenQuestions[0])
 
 
                 
@@ -172,11 +202,11 @@ for row in range(1, 200):
                 
 
             else:
-                printWriteOut("possible answer:",btweenQuestions[0])
+                #printWriteOut("possible answer:",btweenQuestions[0])
                 regx = fr'{my_information[i]}(.*)'  #working 
                 btweenQuestions = re.findall(regx, (col[row].value))
                 if btweenQuestions: 
-                    printWriteOut("possible answer:",btweenQuestions[0])
+                    printWriteOut("possible answer",btweenQuestions[0])
  
 
 #Where is the door located?(.*?)How many doors ?
@@ -190,7 +220,6 @@ for row in range(1, 200):
 
         
 
-        printWriteOut("***************************")
        # print("> splitted array ")
        # print(brr)
         continue
