@@ -1,6 +1,465 @@
 version: "3.1"
 
 nlu:
+- intent: type_lighting
+  examples: |
+    - Emergency
+    - LED
+    - Panel lighting
+
+- intent: Clam_Grill
+  examples: |
+    - Right side of clam grill will not stay up
+
+- intent: Toaster_Conveyor
+  examples: |
+    - Conveyor belt on toaster not spinning, preventing bread/buns from passing through.
+    - Toaster Conveyor Completely Stopped – Conveyor on toaster has now completely stopped working.
+
+- intent: Drawer_Repair_Replacement
+  examples: |
+    - Drawer under dough press needs fixing or replacing
+
+- intent: ELECTRICAL__intent
+  examples: |
+    - Building Works
+    - Pipe behind glasswash snapped at a joint and leaking water everywhere, glasswash not in use at the moment because of this Please see picture attached of PVC pipe
+    - External Building Works
+    - walk in fridge is only hitting -6 Existing job text * Job description The walk in fridge and freezer not hitting temp the fridge being +17 freezer being -1 the is an repeat issue and the 3rd call out in as many mont hs
+    - 2 x flush plates need replacing in ladies toilets
+    - Fire Alarm
+    - Fire Suppression System
+    - Man In Van
+    - "RMM \u2013 Quote to replace complete kitchen resin floor with JDW Spec Altro Stronghold 30 (Dolphin Grey) ensure Sq2 altro is noted on quote and we note what adhesive we are using \u2013 it needs to be moisture resistant like Ardex AF 2575 Plus - Pub closure will be requested so quote for normal working hours."
+    - Sinks and Taps
+    - Socket for clam grill (5 prong) needs replacing as its been damaged and the plug doesnt stay in
+    - RMM - Chandelier needs cleaning and lights replacing.
+    - Our 3 magnetically locked doors (x1 Bottom bar top section, x1 opposite bottom bar and x1 Bottom bar gents toilets leading to BOH) are not releasing when during the fire alarm test.
+    - GreaseShield Leaking oily water and food debris all over floor. Anytime sink is emptied kitchen floor is flooded. Model G51850 AST Serial no. 217539
+    - Altro Flooring - New
+    - 1 Zone Fault showing in 0200 currently been put on Mute or silence not working
+    - Electrical
+    - the lights are still switching off at around 1130 am what ever the engineer done the other day didnt work Existing job text * Job description lights and electricity timer keeps turning off during the day approx (1130a m) - requires removing all together or bypassing as we are 24 hour site.
+    - Chip Scuttles
+    - toaster conveyor is still not rotating so unable to be used still Existing job text * Job description Conveyor belt on toaster not spinning, therefore not allowing bread/buns to go through Additional description Conveyor now completely stopped working, whereas before if you turned the dial down completely the conveyor would move Existing job text * Job description Conveyor on toaster not working when adjusting speed.
+    - MIV   MIV Task List  Task Description Priority remove clock machine in the glasswash ( High replace finger guard on ladies toilets High Check all door locks, bolts and closers High Check FOH & externally for trip hazards High Check all toilets for minor repairs High Check FOH & externally for minor repairs High toilet seat in gets Medium check bolt locks on terrace doors Medium attach clip frames to the wall Medium replace broken push place (toilets) Medium
+    - The engineer identified a fault with the interlock on teh commercial catering inspection.
+    - Walk In Freezer
+    - Hobs
+    - Hotel fire panel showing fault
+    - Walk in freezer still ice build up, due to seals not fitting correctly. Was described on job as being left open too much. Today required full body weight pulling to open the door as ice build up was so severe Additi onal description Was described as user error on job, instead of damaged seals and new one fitted not sitting securely. Existing job text * Job description Walk in freezer having issue closing, lots of ice accumulating in door frame and around door area. Has been since callout raised with ERI on door seals was completed. Have had subcontract to Coolworx in past if this can be done again please, they have been very knowledgeable about the walk in on previous visits.
+    - gutters on roof of building over public pathway blocked, causing water leakage into part of the building on a window (past table2) and also causing issues with the wall in the 70s, potential damp damage and causing cracks in the wall.
+    - Pizza - Dough Press
+    - chip scuttle not working ast all , looks like no power
+    - Gantry
+    - Drainage Above Ground
+    - Chargrill
+    - General Purpose Lighting
+    - the cable at the back of our dough press has been broken. it is out of use atm. needs fixing
+    - Mon 21st to help move kegs again, we have 45kegs arriving on Monday 21st
+    - Toasters
+    - Plumbing/Drainage
+    - after fire alarm test char grill immediately ignites after being turned on suspected fault with ansul maybe ?- Fire engineer needs to attend
+    - Gutters/Rainwater Pipes
+    - 3rd burner from right, licking flames from pilot light hole. suspected leak when valve in use.
+    - To survey the roof as water coming in to the gym above from downpipe at side of building and through the store room on the roof not sure if any other places. need someone who knows to inspect. thanks Gary
+    - Can we get new knobs on both the front pilots and can I have the right one changed as it cuts out every now and then.
+    - Supply & Commision an interface in fire condition will release the rear garden doors. Parts needed 1x 24V relay 10M of cable run and clipped.
+    - Please attend and investigate issues with Ansul system.
+    - All ignitors are not working. all need to replaced. currently have to hand light them so we can use the equipment.
+    - Please can Colin Ogden attend - Alongside 10001803955, electrician required to install electrical supply and fused on/off switch for hot water tap spray. While on site, please hardwire the CCTV monitor plug into the s ocket so that it cannot be switched on/off by customers. Timers to outside need to be changed - 6pm-1am on all 3 timer clocks.
+    - TB lighting near glass wash keeps flickering, was flickering above the BOH door too
+    - RMM - Attend site 7am Monday 28th October and clean all chandeliers with extendable dusters.
+    - disabled bathroom flusher not working and continuous water coming from the toilet.
+    - Gas Works
+    - We need a new work order to be raised for the toaster as the original Wisdom ref number for it was cancelled as I thought it was a duplicate job.
+    - sink leaking onto staff room floor
+    - socket appears to have been knocked, slightly exposed and buttons wont turn off  near the saladette
+    - right end of the chargrill not igniting Additional description last grill bar on the right not igniting Existing job text * Job description Three of the grill bars are not igniting
+    - middle hot light on cold side gantry not working changed bulb but seems to be a lose connection works intermittently if pushed to one side.
+    - Access toilet hand rail has come away from the wall and needs replacing ASAP. Best time would be before 8am as the toilet is used by most early morning customersrs
+- intent: PLUMBING__intent
+  examples: |
+    - Building Works
+    - The floor between tables 7/8 and 19 has risen and is causing a trip point. The carpet will need pulling back to make this repair. This may be a two man job and will need to be early morning due to it been in the restaurant . Will we need a carpet fitter to put the carpet back? A bit of a strange one. Needs to be looked at and completed soon due to the nature of the hazard.
+    - Seal needs replacing on bottom half of the hot hold.
+    - left hand side dryer in the ladies toilet releasing smoke when turned on
+    - External Building Works
+    - help required for beer delivery on Monday 11/11/24 due to no goods lift 17 steps on staircase delivery slot between 0730-11am
+    - Bottom rational does not heat up when turned on
+    - Fire Alarm
+    - Lip edges on BOH stairs are lifting on majority of these steps. Someone to attend to make them safe to use for us please.
+    - Right hand side isolator for glasswasher has unstable neutral. Please can this be sorted as need glass washer for Thursday onwards.
+    - Windows
+    - Rational Ovens
+    - Leak from under radiator at table 4 and leak from female toilet cistern inselt valve
+    - flooring on the cookline between fryers and clam grill is coming away and needs repaired, works will be required possibly over night
+    - Sinks and Taps
+    - Far right hand side burner is not firing up
+    - Model CNH14, Serial No 062022791417 the cabel snapped, Out of use.
+    - Electrical
+    - light conductor on main gantry needs replacing. due to worn down metal.
+    - Fault in feed for electrical supply to keg lift. Powerpack needs wired into a new 16a rotary isolator. Additional description Fault in feed for electrical supply to keg lift from cb to switch. Powerpack needs wiring into a new 16A rotary isolator.
+    - Locks and Keys
+    - Chequer plate in front of the 1st floor entrance requires removing, reconnecting underneath, then a new chequer plate requires fitting once the concrete has gone off.
+    - Staff door lock broken not working
+    - For payment Purposes of 70000859273
+    - Chip Scuttles
+    - Tiles in gents around urinals need removing and replacing
+    - rooms 304 and 307 heat/fire detectors too close to bathroom door fire alarm keeps going off need to be moved to middle of bedroom.
+    - Bin yard gates struggle to open safely and quickly, middle hing is getting stuck, and the top and bottom lock arent inserting properly into where they should. Images already sent over whatsapp and spoken to NBS, just aske d for another callout to be put on
+    - Test point 7 located in the staff room/flat area was tested this morning and will not deactivate. Only way to stop the alarm is by turning it off. Needs attention asap for safety.
+    - Pizza - Dough Press
+    - Fire Panel lights- - General Fault - Power Supply Are flashing Orange
+    - hot water is not working in the pub
+    - Gantry
+    - Move 12x 11g barrels to cellar
+    - Altro Flooring - Repair
+    - Chargrill
+    - Old Rational unit wont turn on.
+    - Following 70000861303 further works required. Repair Electrics for Lighting and power to lamppost after damage by lorry. Further quoted work needed
+    - room 12 fire door and frame needs replacing, as already been measured
+    - to assist Innserve drill holes for a new cabinet
+    - FUSE SWITCH KEEPS FLIPPING OUTSIDE LIGHTING
+    - Grease trap handle broken
+    - Tested the fire alarm this morning. Cannot reset the activated fire alarm panel activated
+    - fire panel keeps coming up with faults in 2 areas saying wiring changed
+    - quote to replace all 10 windows. pictures attached
+    - Plumbing/Drainage
+    - top plate is not heating
+    - we require a new halogen bulb for our chip scuttle. v1250. G50. 240v 500w Victory.
+    - Leak tray has snapped off. Serial number CBH32485
+    - Jet blocked on chargrill. 2,5,7.
+    - other job got closed down by accident can we get someone out now to do the glazing part of it we need a window put back in as soon as possible please Additional description the window has been boarded can we get some one out to put a new window in please Existing job text * Job description Front of House customer area needs to be boarded up tonight and a new window fitted tomorow morning
+    - Hot Hold
+    - Smell of urine coming from access toilet and into office, needs investigated to see where it is coming from.
+    - issue with RM FRILL WALL breaker, attempts to turn on end up in it immediately turning off, meaning some equipment is out of use. source of issue needs investigated and made safe for use. potential issues include 2x broken plug wall sockets (see attached images) one next to pizza section and one behind clam grill on cookline.
+    - Hand basin by pizzas will not shut off, had to isolate water
+    - Top bar lift light not coming on
+    - LINCAT Clam Grill
+    - floor to wall is damaged and needs repairing. Floor is behind the excess fryer freezer. please see photo attached
+    - Main light in bathroom not working at all tried new lamps but still not working may need replaced
+    - Delivery assistance required due to broken lift. Attendance needed on Friday 8th November at 7am. 40 kegs total.
+    - Food gantry in upstairs food room, top set of lights not working, have attempted to change bulbs.
+    - No power going to external signage in rear loading yard and on side of building above stairs.
+    - The top part of the chip scuttles is falling apart due the missing the screws. It has come loose and is out of service.
+- intent: SECURITY_MANNED_CCTV__intent
+  examples: |
+    - top door on the rational isnt closing
+    - we have a leak opposite the bar next to the air con vent which is causing the ceiling to crack slightly and the paint has all peeled away, i presume the leak is from the air con but not 100% sure
+    - toaster blew the fuse and not turning on (fuse switched back on)
+    - we need barrels moving up to our cellar on Monday 11th November, this includes 9-11 gallon barrels up stairs.
+    - burger bun toaster dial on the right hand side isnt working correctly it keeps jumping when trying to adjust the size which means its either burning the burger bun or not cooking it at all.
+    - pipe is dripping at bottom end glasswash Joel
+    - Toaster second and third slot the right hand side element stopped woking
+    - Rational Ovens
+    - Windows
+    - Some extinguishers missing pins/cable ties. CO2 Extinguisher at bottom of BOH stairs not serviced on last inspection.
+    - Sinks and Taps
+    - both ends of grill not lighting making the whole grill colder than usual and steaks longer to cook
+    - RMM continuation of 50000377482 to repair the breeze block wall around the exposed ducting in the elctrical room on 5th floor
+    - will require help with our trade team delivery on Thursday 14/11/24 due to goods lift failure time slot between 07 30- 11am 17 steps on staircase
+    - Ignition switch number 5 on the char grill is not working maintenance required
+    - the plug on the toaster has melted to the socket this is not the first time this has happened and the fuse did not trip in the plug
+    - Altro Flooring - New
+    - RMM Call point in need of replacing and panel resetting.
+    - Plug sockets not working back section of pub from table 1-28
+    - Remedial works needed for PPM from 23/04/2024 - we need an emergency light fitted outside of our walk in freezer upstairs and 2 Emergency bulkheads failed duration test, need replacement fittings
+    - no reply from device to room 101 showing fault on disply pannel
+    - RMM - Quote ASAP to paint high level ceiling OOH in front of the bar and behind the bar. Use JDW Spec Paint. cost approved for 2400
+    - water pipe above table 5 is leeking. Believed to be hot or cold water pipe
+    - our grease trap is not working and making a weird noise when turned on
+    - Ice Machine
+    - Walk In Freezer
+    - Please can x2 engineers to attend to move x9 11gals + x1 9gal barrels to pubs celllar on Wednesday 16th
+    - Goods lift out of order, need barrels transporting to the cellar upstairs on Friday morning after delivery. There will be 42 barrels total, 4 22s and the rest split between 11s and 9s.
+    - Emergency lighting not working in kitchen or door to back of house freezer area. Also to look at and confirm to duty manager about main customer area emergency lighting testing
+    - all door seals on kitchen fridges are poor, keep opening since engineer came out and did ppm
+    - left side of the grill wont take the flame, ignition has gone.
+    - something is tripping the fuse for the pump lights on the bar. The very end fruit machine plug seems to be fizzing so also had to turn off machine. Needs looking at asap please.
+    - Pizza Ovens-TurboChef
+    - Fault light on zone 1
+    - Multiple spotlights in the toilets need replacing
+    - Call Point 17 by cellar sink sounded alarms in the rest of the pub but did not sound the cellar alarms.
+    - Fire alarm went off at 0815 this morning. Showing a Sounder Fault in room 112 (see attached pic). Despite resetting, the alarm kept going off. When I checked room 112, both sounders seemed intact, guest was not smoking or using the shower. I reset the alarm again and the fire alarm stopped sounding but the panel keeps beeping showing the fault. - keep in mind room 112 is occupied and will not check out until Thursday Oct 31st so access really only after 1 1am until 2pm on 31 Oct.
+    - cellar cooling too warm again showing 15 degrees causing issues with ales in there Existing job text * Job description Phil spoke to Darren at NBS. Cellar cooling is showing as 16 degrees, please attend to fix
+    - RMM - Resin flooring in the kitchen has failed at three points along the cookline with a hole forming under the chargrill. Quote for full kitchen floor replacement with altro stronghold 30 in dolphin grey.
+    - Further works required following 70000860233
+    - Chargrill
+    - there is a void behind the bottle fridge on the bar that requires boarded up with a sheet of ply wood, the void is roughly 2x2 metres.
+    - fix ongoing issue with laura ashley smoke detector follow up on 70000864931
+    - Freezer showing error PF power failure and struggling to hold temp. Have defrosted freezer to see if that would help but still beeping, will drop to temp but fluctuates above temp. Have also tried changing where plugged into. Foster freezer model number EP820LW serial number E5529137
+    - Gantry lights not working due to electrical fault. Middle gantry
+    - External Lighting
+    - we just had our walk in freezer gas replaced and its now showing us an E1 on the display ive tried turning it off and on again but the message still persists
+    - RMM - Replace floor on first floor bar and glasswash. JDW spec Altro required. Please break down following the format i sent.
+    - RMM - Small section of floor near walk in has missing resin floor. This needs filling in. Pic attached
+    - supply and fit new fly screen doors to kitchen. double door. 120cmW x 200cmH
+    - Fire Signage
+    - fire panel tripping, alarms constantly sounding waking up residents Additional description alarm is constantly, panel stating smoke in retail area, LA been investigated no evidence of fire or smoke in any area  Existing job text * Job description Hotel fire panel showing fault, also old laura ashley showing fault
+    - Pipework and Waste
+    - Barrel delivery assistance while goods lift is still broken, 7am Monday 28th October, approx 34 x 11 gallon & 6 x 9 gallon kegs down 1 flight of stairs
+    - Bain Maries
+    - second light fitting on the lower shelf of gantry closest to the food lifts needs replacing. it keeps blowing the light bulb, Ive changed it 3 times in the past week
+    - to inspection external lighting and fuse box/timer, as lighting doesnt always come on in time/when getting dark, checked fused box and when flipping fuse switch for external garden lighting back and forth, lighting outside pops on for a second then drops off again, then will eventually come on 15 mins later.
+    - Barrels to be taken upstairs (50 barrels) and bottle cases to be carried downstairs for storage (40 cases)
+    - Please attend to rectify all known remedials as per the attached.
+    - moving barrel delivery from ground floor up to cellar, goods lift is still broken. 9-9 gallons 16-11 gallon next Tuesday 22nd October 12pm
+    - gas leak on cookline behind fryers
+    - contractors required to help move barrels upstairs to cellar from refuse yard tomorrow morning (24/10) . Delivery is due between 7-8am so contractors would need to be on site by 7am.
+    - emergency light over T9 is flickering in test
+    - gas keeps going off in the kitchen Additional description same problem Existing job text Job description Keeps Turing on
+    - Roofing
+    - please carry 17 x 11 gallon barrels and 7 x 9 gallon barrels through pub ad up one flight of stairs. Please arrive at 11am .on Tuesday 29th October
+    - downstairs ice machine top unit has E1 error code and does not work
+    - Flasher broken in ladies in staff room not working so needs replacing.
+    - workers needed to carry 5x 11g kegs and 2 9g casks up 2 flights of stairs to cellar due to goods lift being broken on Thursday 17th October at 730am
+    - LINCAT Clam Grill
+    - Fire alarms in Zone 11 has triggered twice today, there is no obvious reason for this however it is concerning that it has been the same area that has gone off twice in one day and would like for the cause of it to be inve stigated.
+    - delivery due on tuesday at 7am, if we could have a few strong people to take barrels upstairs again please. Need to be on site at 7am to bring empty barrels downstairs please  Tuesday 29th October 3 people
+    - lights and electricity timer keeps turning off during the day approx (1130am) - requires removing all together or bypassing as we are 24 hour site.
+    - middle light fitting not working on right hand side. have changed bulb for new one and one that we know works still no power
+    - Step to kitchen, that leads from cellar/back doors to trafford centre, has a small gap under the step casing, needs filling asap, as advised by EHO/Trafford council pest advisor.
+    - our toaster decided its had enough of working and has packed up.
+    - right rear leg of grill lose/bent
+    - RMM - Multiple heat lamps across gantrys not in use despite new lamps being fitted.
+    - Delivery including 27 barrels needs carrying upstairs.
+    - The front bar sockets keep tripping on distribution board 2, located at the end of the bar in the electrical cupboard, causing our T-Bar lights to be off.
+    - Door of one of the cubicles is hanging off causing a major health and safety hazard
+    - Lift barrels upstairs 2 flights of stairs. 43 barrels in total.
+    - At the moment, all the lights are switched off around the pub. We need more then just switching the fuse off. Please could someone come in and make the broken pole safe so we can switch half the lights which were not conne cted to the pole on Existing job text * Job description Exposed wires in festoon lighting and leaning posts need to be made safe.
+    - Fire Extinguishers
+    - To fill potholes in the delivery area.
+    - Unable to light grill on second part from left.
+    - left hand side out our clam grill is broken, the top half will not stay up when pulled up it just drops back down. Potentially a broken hinge?
+    - engineer came out to fix both walk ins the fridge is okay however the freezer is -1 Existing job text * Job description The walk in fridge and freezer not hitting temp the fridge being +17 freezer being -1 the is an rep eat issue and the 3rd call out in as many months
+    - Further work for original callout 10001787830. Dance floor leak still present and when fixed ceiling needs making good. Existing job text * Job description Further works required following 10001787830
+    - Leak above table 317 again
+    - Please attend to undertake the remedial works identified in the attached report.
+    - Switch has come loose from unit causing bare wires to be present. unit unplugged.
+    - Need the Robot Coupe looking at. It doesnt do anything when assembled. We had been using it for about a month and was working fine prior to this.
+    - Light in back yard not working
+    - Altro flooring lifting by walk in freezer. Needs repairing.
+    - MIV   MIV Task List  Task Description Priority Check all toilets for minor repairs High Check FOH & externally for trip hazards High Check all door locks, bolts and closers High Check FOH & externally for minor repairs High shelfing needed in access toilets for m High sand plus varish floor in chapel High ceiling by lift craig has shown andrew High Room 10 door stoper needs fixing High room 10 wall painting High HK 7 needs new light High 123 bulb in wall light High 119 shower glass loose High 128 shower glass bottom edge sharp High handwash sink in kitchen, needs re-atta High room 9 & 11 bathroom light switches High office door lock veyr jammed have to ho Medium
+    - Electrical
+    - Hot water boiler by coffee machine is still leaking water even after having it looked at and put back for customer use.
+    - Boilers and Radiators
+    - water pipework to rational is corroded and needs replacing. Photo attached
+    - delivery due on Thursday 31st at 7am, if we could have 2 men to take barrels upstairs again please. Need to be on site at 7am to bring empty barrels downstairs please  20 barrels 11 gallons
+    - DISPOSAL PROGRAMME - NBS facilitating works. Please speak to Chris Smith - chsmith@jdwetherspoon.co.uk
+    - Top Pizza oven is temperamental, sometimes works sometimes needs turning on and off multiple times
+    - mutable repairs needed on the joins where patches have need put. will need to come to site as could be a new floor
+    - back of house flooring from staff room to kitchen is extremely slippy, need anti slip replacement, noted on EHO visit
+    - please go to P755 - Wheatsheaf, ST 4 1BU and collect gas cannisters and bring back to P1964 - Arnold Machin  extra large, hanna
+    - not allowing bread/burger buns to slide into machine from stand.
+    - the switch which controls the awp also turns off the allergen screen and the milk screen on top bar. can we have these changed to individuals switches please?
+    - left hand side of gantry (fryer side) will not switch on reoccurring issue Additional description left hand side of gantry not working Existing job text * Job description Gantry bulb was replaced yesterday bu t the whole gantry switch has blown Additional description When changed yesterday the gantry switch has now blown Existing job text * Job description Cookline side 3rd bulb from the left needs changing, the bulb is wired in so we cannot change ourselves
+    - Door Seals
+    - Water leaking from waste pipe
+    - Workers needed to carry 30 barrels up 2 flights of stairs to the cellar due to goods lift being broken. To be completed ASAP
+    - I have 4 microwaves connected to one fuse in the fuse board. the fuse has 30amps and the microwaves have 13amps each thats 52amps going into a 30 amp fuse. I need someone to take a look at it and possibly connect them to another fuse so it stops damaging them and sometimes tripping out. they are all connected to L3 you can see in the photo attached.
+    - Food room lower gantry does not stay on or doesnt switch on at all
+    - clam grill sparked and made a loud noise and now will not turn on. Additional description Same problem has occurred Existing job text * Job description Clam grill broken, last night big spark then a bang whil e cleaning it,
+    - roofing contractor required to check flashing and joints
+    - Emergency lighting above side door at front of pub not working
+    - Require all syphons in ladies toilets replaced to low water flow
+    - Some wood has broken off the outside of the bottom shelfing of the summer doors due to damage or rot. Whole plank will most likely needed replaced, painted and fitted
+    - Overnight work planned, need sink and dishwasher disconnecting and reconnecting each night from the 4th-7th November.
+    - 2 x damaged doors (inside) on undercounter fridges 4 and 7 1 x damaged door (LHS) on saladette unit  serial numbers; 4 - CBF86230 7 - CBF86224 5 (saladette) CBF86226
+    - control panels working for A/C but have no impact on temperature. No warm/cold air coming through
+    - The water is only warm. Not hot enough for tea.
+    - same issue as before, 3rd burner wont light Existing job text Job description 3rd burner wont light
+    - Need a access panel putting into the pillar near allergen screen upstairs and one on the wall downstairs (speak to JW)
+    - Replace tags for CO2 extinguishers in glycol room, kitchen and at main app station .
+    - barrels require lifting up 2 flights of stairs 10x11 1x9
+    - Under Counter Fridge
+    - Tanker needed to clear blockage that has caused a burst pipe with sewage coming out in kitchen, downstairs ladies toilets and back of house corridors
+    - LED ceiling lights keep flickering, two need replacing too. Additional description flickering LED lights in back section of pub Existing job text * Job description Plug sockets not working back section of pub from table 1-28
+    - Hi, The garden gates arent opening when the fire alarm sounds. Please attend to look at and fix.
+    - waste removal from rear of pub
+    - 3rd sink tap, is lose and dosnt work. Tap might need replaced.
+    - Rational not finishing cleaning cycle and coming up with error message
+    - top left bolt came off and is now only hanging on by 1 bolt.
+    - Top rational cleaning gun is stuck and will not let door close. Bottom rational displaying Service 29 Excessive temperature in the electrical equipment room  message. Serial no. E61SH11112280835 SCC-07-00-09.1
+    - Further works following 10001785820 - closed in error.
+    - Exposed wires in festoon lighting and leaning posts need to be made safe.
+    - The hot water filter display is off and the machine stopped working, might need a filter change as well
+    - room 304 water in sink and shower too hot to shower in setting off fire alarms
+    - kitchen cutlery polisher missing pin to hold cutlery coming out tray
+    - Internal Lighting
+    - cant setup correct temperature on plate womer
+    - Can we get new knobs on both the front pilots and can I have the right one changed as it cuts out every now and then.
+    - '**Barrel delivery assistance** | Monday 4th November @ 7am | 100 x 11g | No Stairs (Small goods lift on site) Sack truck required to wheel to cellar'
+    - The Calm Grill on the left side was fixed due to it not heating up but after the engineer left has fallen down and we are unable to use it as it is not safe. Existing job text * Job description no heat to LHS top press arm. Dial is showing unit is on as button lights up however no heat and can be touched
+    - Cleaner was dusting the lights above table 17 and one light has fallen out of the socket and wont go back in
+    - Continuation of job ref 50000375428. Needs extended on previous quote due to bad weather causing delays in completion
+    - no heat to LHS top press arm. Dial is showing unit is on as button lights up however no heat and can be touched
+    - The fire panel in the hotel is showing message Ground Floor sounder fault. We have currently muted the alarm as with guests staying in the hotel, but please could someone attend asap to fix the issue
+    - Water drain pipe cracked behind hot bath
+    - Ventilation
+    - Walk in freezer having issue closing, lots of ice accumulating in door frame and around door area. Has been since callout raised with ERI on door seals was completed. Have had subcontract to Coolworx in past if this can be done again please, they have been very knowledgeable about the walk in on previous visits.
+    - Fireplace in th snug area not extracting smoke we are unable to light
+    - Middle gas line isnt on fully, it keeps cutting out every now and then as well
+    - LHS coffee machine and fridge underneath keep randomly losing all power fuse is fine doesnt go off when power is lost.
+    - middle light on bottom gantry is not working. Bulb is fine. Damaged where the bulb sits.
+    - Barrel delivery assistance - delivery on Monday 11th November. 100 x 11s
+    - The pizza station hand wash sink isnt draining, and the macerator appears to not be working.
+    - Rational displaying error Service 120. Unit not in operation. Steam generator recognition faulty during CleanJet. If you close the error, the oven asks if water supply has been fixed, and then proceeds to say testi ng water supply before returning to the same error. Turning off and on again makes no difference, so leaves it unable to use. Additional description error 120 Existing job text * Job description rational wont clean or cook sh owing water error
+    - Top left gantry lights wont turn on
+    - Call point in the glass wash area is damaged. Break point glass broken and turned around since PPM carried out by Rich Daley on 10/08/2024, this is causing the alarm to trigger,.
+    - gas leak coming from char grill in kitchen had to do any emergency shut off of gas in kitchen
+    - Building Works
+    - '**Barrel delivery assistance** | Friday 21st October @ 7am | 120 x 11g | No Stairs (Small goods lift on site) Sack truck required to wheel to cellar'
+    - '*Not building works* Please collect Hot Hold unit from boiler room here and return to the Keavans Port pub where it was stored.'
+    - Tube where water runs down to make the ice has snapped
+    - please come next tuesday (5th) and carry 16 x 9 gallon and 30 x 11 gallon barrels up the stairs!  Come at 10am please
+    - Fire Alarm
+    - Fire Suppression System
+    - re raise of 50000381531  Job description Following 10001795439 a quote required to replace 2 x sounderbeacon bases addressable 2 x hochiki multi sensors in cellar and program onto fire system
+    - Need a wet-vac and disinfect in void area and corridor from blocked sewage pipe
+    - Make safe lamppost in the garden Additional description Needs to do further work to make sure safe and looks presentable Existing job text * Job description At the moment, all the lights are switched off arou nd the pub. We need more then just switching the fuse off. Please could someone come in and make the broken pole safe so we can switch half the lights which were not connected to the pole on Existing job text * Job description E xposed wires in festoon lighting and leaning posts need to be made safe.
+    - pest proofing required around the whole pub.  -gaps under ale pumps require filled or patched over. -gaps at end of bar beside beer taps to be filled. -basement beside gas meter has holes in walls to be fil led. -stables walls need filled with cement, to the left of stables as you go in. -disused window, access by stables back door, gap at base of the cover needs filled. - gaps at base & top of wall as well as around cables and pipes need filled with cement. (access to this through rear of stables). -courtyard at office needs proofing around pipes -boiler room needs holes around pipes filled and also a mesh grate over the vent. -heavy duty flexi arm our required at base of stables & delivery exit door.  -please contact pub to arrange a walk around to do the job with pub manager, pest report available for further guidance.
+    - broken window upstairs top area
+    - Fire alarm repeater panel next to regent road doors is making a constant high pitch alarm, the screen says DISABLED then for the area just says PUB. The disablement category has an amber light next to it. We have silenced it for now but when we try to reset it, it goes off again. No signs of fire on pub level but does not provide us with specific area to check.
+    - Loud bang happened and now lights wont work
+    - Remedials following 2000617995 please see the attached
+    - re raise of 10001812051
+    - Water pump that was recently repaired has started leaking water badly with water coming in through the office ceiling. A large volume of water has been pumped and is all over the plant room floor and is all over the floor. Existing job text * Job description experiencing water ingress from the boundary wall. There has been no rain and the water is coming through the boundary wall in close proximity to your plant room and water tank. Please investiga te this leak
+    - 201 - stand alone shower is only giving out hot water, maintenance associate believes thermostat is broken.
+    - Flat roof above the window opposite to the access toilet is leaking through. It seems to be coming from the roof not the frame and landing on the window sill.
+    - fan on roof for fire needs to be looked at. Not working and not clearing smoke from snug room
+    - help required for beer delivery on Tuesday 12/11/24 due to no goods lift 17 steps on staircase delivery slot between 0730 am until 11am
+    - '**Barrel Delivery Assistance** | 4/11 @ 7am | 20x 11g + 3 x 9g | 1 flight of stairs'
+    - Pizza machine leaking
+    - Chip Scuttles
+    - leak coming through left hand ceiling of bottle cupboard- looks like mould coming through too?
+    - Plate Warmers
+    - Re-allocation of 10001793782 (Contractor no longer available) | Desc Please see attached Refrigeration and F-Gas Insp. Please attend to rectify all known remedials
+    - RMM - Quote to replace kitchen altro floor - all the way into the walk in units and delivery area. JDW SPEC ALTRO STRONGHOLD 30. Can we have cost of altro per sq2.
+    - Job description Need assistance moving barrels up to the cellar Friday after delivery as lift is out of use. 30 kegs including 20 22gallon.and 40 barrels to come down stairs
+    - Hi - Please ensure engineer has access to attached photos and job list, first time fix please. Kindly avoid peak times - a morning attendance would be preferred. 2 jobs on this callout. 1) y shaped connector situated be hind the glass wash is split - this needs to be replaced, pictures attached. 2) The waste pipe in the cupboard near the bar requires TWO brackets to hold the pipe in place - one is a replacement the 2nd is additional, pictures attache d. PARTS & INFO The Y Shaped connector is a standard size waste fit. The cupboard pipe is 40mm. The Bracket holes are 3 - New holes and rawl plugs will be required for the additional bracket - possibly a masonry drill bit will be required - the picture clearly shows the existing bracket to allow you to match. Please ensure arrival with parts required or call for more information.
+    - need lights changing in a few areas, above table 1, corridor from bar to flat, boh store corridor, 2 strip lights in cellar, 1 next to bottle store in cellar. Various bulbs
+    - Barrel delivery assistance while goods lift is broken, 8am Wednesday 23rd October approx 18 x 11gal kegs down 1 flight of stairs
+    - Pizza - Dough Press
+    - grease trap in pot wash is leaking from the bottom along with pipe constantly coming out of place
+    - RMM - Quote to replace temporary plastic wrapping around ductwork on roof with suitable cladding.
+    - Gantry
+    - hand wash basin plastic waste pipe has snapped clean inside and elbow joint.
+    - toaster plug failed test, also the toaster belt doesnt seem to be running
+    - hand basin by panini machine keeps locking itself on & will not turn off
+    - 29 kegs to be put to the cellar on Wednesday 30th October
+    - Gantry bulb has blown on bottom left side. Needs new bulbs and fixing.
+    - Rubber strip required to be fitted to the back doors that lead to trafford centre corridor. Small gap where the doors meet, behind the bolts. Brush strips are already fitted, but we need additional to cover the gap. As advised by EHO/Trafford council pest advisor
+    - Move relay onto bar beside new Secom panel
+    - Toasters
+    - to attend at 7am to assist with a barrel assistance. amount of barrels will be sent over via email - two man team required.  60 barrels plus 4 barrels onsite
+    - Rubber strip required for main cellar door from pub area
+    - Extend the bin shed area to cover the void space at end of fencing
+    - floor needs sticking back on as its lifting up on the left hand side of the actual toilet. please can you also glue skirting/trim everywhere that is coming off the walls in that toilet. the altro is still in a good conditi on so literally just needs sticking back down
+    - anti slip grips
+    - Fire exit stairway from rear hotel exit via 109 has a railing on the external stairwell where the weld had failed and is now unsafe to use. this requires re-welding asap.
+    - Re-raise of 10001790628 | Desc replace metal trim seal
+    - panni machine started sparking when in use
+    - 1 emergency light out in the back room on top bar in the middle of the room, 1 emergency light out above the entrance door to boh as you enter, 1 dim/not as well lit in front of the top bar next to air con grate, 1 dim/not well lit in staff ladies toilet next to lift access room. all need to be fixed/replaced when possible
+    - The left plate does not hold itself fully up so risk of it falling.
+    - '*NOT BUILDING WORKS* Batter station needs swapping with one currently used in Linen Weaver, Cork. Ours will need collecting and taking to Cork and their batter station then needs bringing back to our site.'
+    - Repair Electrics for Lighting and power to lamppost after damage by lorry Additional description Further quoted work needed Existing job text * Job description Exposed wires in festoon lighting and leaning po sts need to be made safe.
+    - Panini Machines
+    - Foster service freezer EP820LW E5594210 temperature rising constantly too warm
+    - Need assistance moving barrels up to the cellar Monday after delivery as lift is out of use. 32 kegs including 5 22gallon.
+    - A callout was placed earlier on for the same issue, fault in the fire alarm, room 101 system is saying no reply from device
+    - Chip scuttle bulb/light has stopped working
+    - Gas Works
+    - cellar emergency lighting not working
+    - Please can x2 engineers to attend to move 10-15 kegs to pubs celllar on Friday 18th
+    - RMM down stairs bar and glass wash need replacing altro with stronghold spec - has been patched several times and now cracking in glass wash and welds failing on GF bar
+    - last time someone come out to fix the grill the middle one wouldnt turn on but now it seems like something has split and a flame comes out the front vents Additional description last time someone come out to fix the grill the middle one wouldnt turn on but now it seems like something has split and a flame comes out the front vents Existing job text * Job description the very middle one is not turning on Additional description the last 2 are fine now. just now the middle one Existing job text * Job description the last 2 on the right and side not turning on or struggle to turn on
+    - Plates under bars appear to have holes in. engineer required.
+    - Both rationals leak during cleaning cycles from the door - seals are fine, new and in good condition, the problem seems to be the actual plastic of the door
+    - Freezers
+    - Under the overlap of all the bench seating is a massive gap, 18, 20, 24, 11, 22, 40. 41, 15, 16, needs boarding up .
+    - remedials following 201470. Due to the system exceeding the maximum amount of flows for a double tank system. The pipework requires an alteration. Install 2 x single pipe runs. 1st Tank supplies the fryers. Change the 3N n ozzles that are installed already and install 6 x 245 overlapping, which will provide 12 flows. This will also benefit the chefs as the nozzles will be located higher height and away from head height. 2nd Tank supplies the plenum, extracts, chargrill, and clam, which will provide 11 flows. Change the 260 nozzle above clam to a single 1N.
+    - Allergen screen is on the same circuit as the AWP machines. Needs its own circuit as requested by HO to not switch off due to updates but, cant have AWP switched on over night, as may promote an intruder.
+    - to fit isolator and cable for the fan for the real fire. on arrival please call 07961565057 (Mark from Kerrigan)
+    - External Building Works
+    - delivery door concrete ramp has crumbled away and now its very difficult to get cages into the building. need to remove whats left of the old ramp and build new one in its place
+    - Please attend site to fix gas pipe from wall to chargrill. flex pipe has popped off fitting & engaged the integrated stop valve.
+    - couple of railway sleepers on middle level and top of garden are rotten and require replacing
+    - We have a fire exit sign which has a sticker on which changes the arrow. Please can this be replaced with a full new sign facing to the left, to show the exit
+    - pizza gantry has 2 heat lamp fixture that need replacing , new bulbs tested but still dont work
+    - Hot Water Drinks Boilers
+    - carry barrels up stairs on tuesday 12th  please come at 10am there are ; 11gallon x 27 9 gallon x 7
+    - Two ceiling mounted spotlights out in the main gents toilets.
+    - Man In Van
+    - pipe underneath sink in glass wash is not staying in place and leaking whenever water is going down the sink. Pipe currently held in place with a tray underneath it
+    - 1x water extinguisher has had pin pulled out, it is currently under the stairs in the lost property area, will need the extinguisher replacing
+    - lobby top bar leading to townside garden has a damaged celling where the roof has been leaking ands it has also damaged the walls. would it be possible to get the works quoted or maybe a temporary fix for wall celling and leak untill we have our referb.
+    - RMM Replace tiled flooring in ladies under sink with JDW spec wood effect altro. Take care to try to keep as many tiles unbroken as possible. Use tiles any unbroken tiles to replace cracked tiles in ladies cubicle.
+    - '**Barrel Delivery Assistance** | 31/10 @ 8am | 29 x 11g + 4 x 9g | 1 flight of stairs'
+    - Emergency Lighting
+    - MIV   MIV Task List  Task Description Priority metal strip - bottom of lobby/front hal High staff toilet seats need fixing High an engineer said there was a lot of wat High Check all door locks, bolts and closers High Check all toilets for minor repairs High Check FOH & externally for minor repairs High Check FOH & externally for trip hazards High fix drain grate at main entrance where High heater in couth yard needs new bulb Medium paint step at front door. black with ye Medium tighten base on silver stand Medium
+    - Add power supply needed for a new mug washing unit on left side of ice machine (currently where there is a glass drying trolley)
+    - Leak in the boiler room
+    - door nor sealing properly leading to incorrect temp zone Additional description problem as before, staff noticed gap in door seal on both sides which may be the cause of problem Existing job text * Job descrip tion freezer not achieving temp serial number E6048786 Additional description same issue as before, followed engineers instructions with no improvement Existing job text * Job description freezer not achieving temp Additional description same issue as before Existing job text * Job description Tall freezer not reaching temp. been on high for hours with nothing in it. SNE6048786
+    - Emergency lighting and fire alarm needs to be taken down in office to allow building contractor to fit ceiling tiles, the emergency lighting and fire alarm then needs to be placed back up on the new ceiling tiles
+    - Tried to turn on multiple time but wont turn on.
+    - Loose mono blocks and uneven ground where the path meets the mono blocks outside reception.
+    - service 120 error
+    - assistance moving barrels to the cellar on Monday 4th Nov - 23 x 11gal kegs arriving
+    - Repoint damaged external brickwork to rear of gents toilets near large windows (where HVAC is on open roof behind gents). Also remove affected plaster in internal areas and apply new renovating plaster. This is to resolve damp issues within pub. Internal works will require overnight works
+    - MIV   MIV Task List  Task Description Priority cover hole in wall left by clock in mac High Hook on bin store needs replacing. High Check all door locks, bolts and closers High Check FOH & externally for trip hazards High Check all toilets for minor repairs High Check FOH & externally for minor repairs High replace finger guard on ladies toilets High replace broken push place (toilets) Medium
+    - Remedials following Flue Cleaning
+    - quote required to replace existing condensing unit and controls
+    - Fire Alarm keeps going off for spoons bar area zone 1
+    - To check over the alarm panel and all sensors across the pub to ensure they are operating properly as we had another false alarm on 7/10, which was the third or fourth across the last month. Previously had sensors near goo d lift checked/sorted but want the whole pub checked so if further false alarms happen we can escalate further if necessary.
+    - Drainage Above Ground
+    - Works still required, Light and boxes need replacing. Existing job text * Job description Kitchen Canopy require new lights and boxes due to grease build up that doesnt come off.
+    - Remove pigeon netting and Flower boxes from the front of the building and make good the wall behind including paint if needed. this is high level 2 man job
+    - Altro Flooring - Repair
+    - Pipe behind chargrill in kitchen leaking
+    - the door to the undercounter fridge keeps coming off. needs to be resecured on.  this is a Foster unit Model 13- 214 HR150 Serial NoE6019059
+    - chargrill wont light all 3 burners
+    - the roof/element inside the oven is hanging off
+    - seal on pizza fridge needs replaced
+    - Fixtures and Fittings
+    - FM - Request made to arrange transport of gas cylinders from this pub (P5713) to be delivered to P546 Three Hulats
+    - Room 123 needs electrical wires fixed plus white connector as light is not working in light connected to ceiling.
+    - Tripped fuse, reset and tripped again. Loud pop heard when it initially tripped.
+    - We just had a new element put on the clam grill. the engineer told us its heavier so the top will most likely full but didnt stay and fix that issue? this is very unsafe for all of us here. there has been many near misses. . I need someone out asap to fix this issue please. its unsafe!
+    - Quote to change external lighting from sensor to time clock
+    - Plumbing/Drainage
+    - leak comes through ceiling when heavy rain next to table 61, comes through vent, shopping center upstairs cant find source
+    - plug socket unit above microwaves in kitchen fallen down. needs reattaching to ceiling
+    - Ignition switch number 6 on the char grill is not working maintenance required.
+    - To attend and fix potential gas leak with pipe behind the grill. When gas is turned on, you can hear a hissing noise coming from the pipe and if you lean over it smells of gas.
+    - replace 4 spot lights on main bar (above gin display and games) following water damage. external light timer to be reset to come on at 5pm at go off at 2am set for day light saving time check dimmer panel is set to dim throughout the evening currently just on bright all the time
+    - We have a sewage smell in our ladies toilets.
+    - left hand pressure system in cellar fault unable to idenitfy issue
+    - Raising job to cover costs of attendance on 07/10 due to alarm panel fault
+    - follow up from wisdom callout - 10001793431
+    - One plug socket on the cookline in the kitchen on salad station under the clock, is tripping out the whole gantry. need someone to take a look at it.
+    - 2 lights have gone down on cookline, tried changing the bulbs but still doesnt work
+    - Ductwork Lagging
+    - access hatch to be installed next to aircon unit next to tbl 31 to gain access to leaking pipe in the ceiling
+    - lighting timer not set correctly keeps turning off and wont turn back on
+    - MIV   MIV Task List  Task Description Priority shelfing needed in access toilets for m High sand plus varish floor in chapel High ceiling by lift craig has shown andrew High Check all toilets for minor repairs High Check FOH & externally for trip hazards High Check all door locks, bolts and closers High Check FOH & externally for minor repairs High Room 10 door stoper needs fixing High room 10 wall painting High HK 7 needs new light High 123 bulb in wall light High 119 shower glass loose High 128 shower glass bottom edge sharp High handwash sink in kitchen, needs re-atta High
+    - Light round back of kitchen/potwash area is flickering
+    - "MISSING COSTS FOLLOWING 70000803941 \xA365 + \xA345-1engr-2hrs=\xA3155.00 Materials Callpoint - \xA359.18 Callpoint Cover - \xA312.97 Fixings & Consumables - \xA37.10 Total Cost \xA3234.25 Ex Vat"
+    - FAO MARCIN LAJTAR - ATTEND ALONGSIDE MANAGING AGENT TO ASSESS ROOFING REPAIR REQUIREMENTS. NO WORKS TO BE COMPLETED - SURVEY ONLY.
+    - Metal grid coming down too far, very loose
+    - broken electrical box on cookline - on back wall so will require attendance before open at 0800.
+    - '- Both boilers need to be looked at as there is an error message - Also, boilers that needs servicing. - Both boilers in the attic'
+
+- intent: bulb_location_descr_work
+  examples: |
+        - office ceiling and no special access needed
+        - [0-9]* out of [0-9]* ring lights needing replacement.
+        - External Light Pole, reach 1st floor, approx [0-9]    m
+        - Flicking light, east of car cark (left from reception) Out/Dull light south of carpack (Directly in front of reception)
+        - This light continuously flickers cause a big distraction for any of our office clients on that side of the building as well as neighbouring buildings
+        - Office client are forced to close there blinds to avoid seeing this light
+        - Client and cleaners have commented about not being able to see when heading to there cars. 
+  
 - intent: greet
   examples: |
     - hey

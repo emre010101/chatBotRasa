@@ -11,6 +11,11 @@ intents:
   - order_pizza
   - order_food
   - inform_food
+  - bulb_location_descr_work
+  - SECURITY_MANNED_CCTV__intent
+  - ELECTRICAL__intent
+  - PLUMBING__intent
+  
 
 entities:
   - food
@@ -21,6 +26,15 @@ actions:
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+
+  utter_SECURITY_MANNED_CCTV__intent:
+  - text: "SECURITY_MANNED_CCTV__intent"
+
+  utter_ELECTRICAL__intent:
+  - text: "ELECTRICAL__intent"
+
+  utter_PLUMBING__intent:
+  - text: "PLUMBING__intent"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"

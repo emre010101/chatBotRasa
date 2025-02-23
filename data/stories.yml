@@ -9,6 +9,29 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+
+- story: security
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__intent
+  - action: utter_SECURITY_MANNED_CCTV__intent
+
+- story: electrical
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__intent
+  - action: utter_ELECTRICAL__intent
+
+- story: plumbing
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: PLUMBING__intent
+  - action: utter_PLUMBING__intent
+
+
 - story: sad path 1
   steps:
   - intent: greet
