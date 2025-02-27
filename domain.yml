@@ -15,6 +15,34 @@ intents:
   - SECURITY_MANNED_CCTV__intent
   - ELECTRICAL__intent
   - PLUMBING__intent
+  - SECURITY_MANNED_CCTV__Building_Works
+  - SECURITY_MANNED_CCTV__Refrigeration_Door_Seals
+  - SECURITY_MANNED_CCTV__Kitchen_Cookline
+  - SECURITY_MANNED_CCTV__Gas_Works
+  - SECURITY_MANNED_CCTV__Electrical
+  - SECURITY_MANNED_CCTV__Building_Works_External
+  - SECURITY_MANNED_CCTV__Lighting
+  - SECURITY_MANNED_CCTV__Kitchen_Equipment
+  - SECURITY_MANNED_CCTV__Fire_Safety
+  - SECURITY_MANNED_CCTV__Ductwork
+  - SECURITY_MANNED_CCTV__Plumbing_Drainage
+  - SECURITY_MANNED_CCTV__Refrigeration_Kitchen
+  - PLUMBING__Kitchen_Cookline
+  - PLUMBING__Building_Works
+  - PLUMBING__Electrical
+  - PLUMBING__Doors_and_Locks
+  - SECURITY_MANNED_CCTV__Coffee_Tea_Equipment
+  - SECURITY_MANNED_CCTV__Man_In_Van
+  - ELECTRICAL__Plumbing_Drainage
+  - ELECTRICAL__Building_Works
+  - ELECTRICAL__Kitchen_Cookline
+  - ELECTRICAL__Refrigeration_Kitchen
+  - SECURITY_MANNED_CCTV__Glazing
+  - SECURITY_MANNED_CCTV__Ice_Machine
+  - SECURITY_MANNED_CCTV__HVAC
+  - ELECTRICAL__Fire_Safety
+  - ELECTRICAL__Electrical
+  - ELECTRICAL__Man_In_Van  
   
 
 entities:
@@ -26,15 +54,7 @@ actions:
 responses:
   utter_greet:
   - text: "Hey! How are you?"
-
-  utter_SECURITY_MANNED_CCTV__intent:
-  - text: "SECURITY_MANNED_CCTV__intent"
-
-  utter_ELECTRICAL__intent:
-  - text: "ELECTRICAL__intent"
-
-  utter_PLUMBING__intent:
-  - text: "PLUMBING__intent"
+  
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -53,7 +73,63 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_order_pizza:
-    - text: "Sure what kind of pizza you want"
+  - text: "Sure what kind of pizza you want"
+  utter_ELECTRICAL__Building_Works:
+  -  text: "ELECTRICAL__Building_Works"
+  utter_ELECTRICAL__Electrical:
+    - text: "ELECTRICAL__Electrical"
+  utter_ELECTRICAL__Fire_Safety:
+    - text: "ELECTRICAL__Fire_Safety"
+  utter_ELECTRICAL__Kitchen_Cookline:
+    - text: "ELECTRICAL__Kitchen_Cookline"
+  utter_ELECTRICAL__Man_In_Van:
+    - text: "ELECTRICAL__Man_In_Van"
+  utter_ELECTRICAL__Plumbing_Drainage:
+    - text: "ELECTRICAL__Plumbing_Drainage"
+  utter_ELECTRICAL__Refrigeration_Kitchen:
+    - text: "ELECTRICAL__Refrigeration_Kitchen"
+  utter_PLUMBING__Building_Works:
+    - text: "PLUMBING__Building_Works"
+  utter_PLUMBING__Doors_and_Locks:
+    - text: "PLUMBING__Doors_and_Locks"
+  utter_PLUMBING__Electrical:
+    - text: "PLUMBING__Electrical"
+  utter_PLUMBING__Kitchen_Cookline:
+    - text: "PLUMBING__Kitchen_Cookline"
+  utter_SECURITY_MANNED_CCTV__Building_Works:
+    - text: "SECURITY_MANNED_CCTV__Building_Works"
+  utter_SECURITY_MANNED_CCTV__Building_Works_External:
+    - text: "SECURITY_MANNED_CCTV__Building_Works_External"
+  utter_SECURITY_MANNED_CCTV__Coffee_Tea_Equipment:
+    - text: "SECURITY_MANNED_CCTV__Coffee_Tea_Equipment"
+  utter_SECURITY_MANNED_CCTV__Ductwork:
+    - text: "SECURITY_MANNED_CCTV__Ductwork"
+  utter_SECURITY_MANNED_CCTV__Electrical:
+    - text: "SECURITY_MANNED_CCTV__Electrical"
+  utter_SECURITY_MANNED_CCTV__Fire_Safety:
+    - text: "SECURITY_MANNED_CCTV__Fire_Safety"
+  utter_SECURITY_MANNED_CCTV__Gas_Works:
+    - text: "SECURITY_MANNED_CCTV__Gas_Works"
+  utter_SECURITY_MANNED_CCTV__Glazing:
+    - text: "SECURITY_MANNED_CCTV__Glazing"
+  utter_SECURITY_MANNED_CCTV__HVAC:
+    - text: "SECURITY_MANNED_CCTV__HVAC"
+  utter_SECURITY_MANNED_CCTV__Ice_Machine:
+    - text: "SECURITY_MANNED_CCTV__Ice_Machine"
+  utter_SECURITY_MANNED_CCTV__Kitchen_Cookline:
+    - text: "SECURITY_MANNED_CCTV__Kitchen_Cookline"
+  utter_SECURITY_MANNED_CCTV__Kitchen_Equipment:
+    - text: "SECURITY_MANNED_CCTV__Kitchen_Equipment"
+  utter_SECURITY_MANNED_CCTV__Lighting:
+    - text: "SECURITY_MANNED_CCTV__Lighting"
+  utter_SECURITY_MANNED_CCTV__Man_In_Van:
+    - text: "SECURITY_MANNED_CCTV__Man_In_Van"
+  utter_SECURITY_MANNED_CCTV__Plumbing_Drainage:
+    - text: "SECURITY_MANNED_CCTV__Plumbing_Drainage"
+  utter_SECURITY_MANNED_CCTV__Refrigeration_Door_Seals:
+    - text: "SECURITY_MANNED_CCTV__Refrigeration_Door_Seals"
+  utter_SECURITY_MANNED_CCTV__Refrigeration_Kitchen:
+    - text: "SECURITY_MANNED_CCTV__Refrigeration_Kitchen"
 
 
 session_config:

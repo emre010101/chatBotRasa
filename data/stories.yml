@@ -10,28 +10,6 @@ stories:
   - action: utter_happy
 
 
-- story: security
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: SECURITY_MANNED_CCTV__intent
-  - action: utter_SECURITY_MANNED_CCTV__intent
-
-- story: electrical
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: ELECTRICAL__intent
-  - action: utter_ELECTRICAL__intent
-
-- story: plumbing
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: PLUMBING__intent
-  - action: utter_PLUMBING__intent
-
-
 - story: sad path 1
   steps:
   - intent: greet
@@ -60,3 +38,198 @@ stories:
   - action: confirm_order_action
 #  - action: utter_order_pizza
 
+- story: SECURITY_MANNED_CCTV__Building_Works
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Building_Works
+  - action: utter_SECURITY_MANNED_CCTV__Building_Works
+
+- story: SECURITY_MANNED_CCTV__Refrigeration_Door_Seals
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Refrigeration_Door_Seals
+  - action: utter_SECURITY_MANNED_CCTV__Refrigeration_Door_Seals
+
+- story: SECURITY_MANNED_CCTV__Kitchen_Cookline
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Kitchen_Cookline
+  - action: utter_SECURITY_MANNED_CCTV__Kitchen_Cookline
+
+- story: SECURITY_MANNED_CCTV__Gas_Works
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Gas_Works
+  - action: utter_SECURITY_MANNED_CCTV__Gas_Works
+
+- story: SECURITY_MANNED_CCTV__Electrical
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Electrical
+  - action: utter_SECURITY_MANNED_CCTV__Electrical
+
+- story: SECURITY_MANNED_CCTV__Building_Works_External
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Building_Works_External
+  - action: utter_SECURITY_MANNED_CCTV__Building_Works_External
+
+- story: SECURITY_MANNED_CCTV__Lighting
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Lighting
+  - action: utter_SECURITY_MANNED_CCTV__Lighting
+
+- story: SECURITY_MANNED_CCTV__Kitchen_Equipment
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Kitchen_Equipment
+  - action: utter_SECURITY_MANNED_CCTV__Kitchen_Equipment
+
+- story: SECURITY_MANNED_CCTV__Fire_Safety
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Fire_Safety
+  - action: utter_SECURITY_MANNED_CCTV__Fire_Safety
+
+- story: SECURITY_MANNED_CCTV__Ductwork
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Ductwork
+  - action: utter_SECURITY_MANNED_CCTV__Ductwork
+
+- story: SECURITY_MANNED_CCTV__Plumbing_Drainage
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Plumbing_Drainage
+  - action: utter_SECURITY_MANNED_CCTV__Plumbing_Drainage
+
+- story: SECURITY_MANNED_CCTV__Refrigeration_Kitchen
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Refrigeration_Kitchen
+  - action: utter_SECURITY_MANNED_CCTV__Refrigeration_Kitchen
+
+- story: PLUMBING__Kitchen_Cookline
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: PLUMBING__Kitchen_Cookline
+  - action: utter_PLUMBING__Kitchen_Cookline
+
+- story: PLUMBING__Building_Works
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: PLUMBING__Building_Works
+  - action: utter_PLUMBING__Building_Works
+
+- story: PLUMBING__Electrical
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: PLUMBING__Electrical
+  - action: utter_PLUMBING__Electrical
+
+- story: PLUMBING__Doors_and_Locks
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: PLUMBING__Doors_and_Locks
+  - action: utter_PLUMBING__Doors_and_Locks
+
+- story: SECURITY_MANNED_CCTV__Coffee_Tea_Equipment
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Coffee_Tea_Equipment
+  - action: utter_SECURITY_MANNED_CCTV__Coffee_Tea_Equipment
+
+- story: SECURITY_MANNED_CCTV__Man_In_Van
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Man_In_Van
+  - action: utter_SECURITY_MANNED_CCTV__Man_In_Van
+
+- story: ELECTRICAL__Plumbing_Drainage
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__Plumbing_Drainage
+  - action: utter_ELECTRICAL__Plumbing_Drainage
+
+- story: ELECTRICAL__Building_Works
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__Building_Works
+  - action: utter_ELECTRICAL__Building_Works
+
+- story: ELECTRICAL__Kitchen_Cookline
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__Kitchen_Cookline
+  - action: utter_ELECTRICAL__Kitchen_Cookline
+
+- story: ELECTRICAL__Refrigeration_Kitchen
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__Refrigeration_Kitchen
+  - action: utter_ELECTRICAL__Refrigeration_Kitchen
+
+- story: SECURITY_MANNED_CCTV__Glazing
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Glazing
+  - action: utter_SECURITY_MANNED_CCTV__Glazing
+
+- story: SECURITY_MANNED_CCTV__Ice_Machine
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__Ice_Machine
+  - action: utter_SECURITY_MANNED_CCTV__Ice_Machine
+
+- story: SECURITY_MANNED_CCTV__HVAC
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: SECURITY_MANNED_CCTV__HVAC
+  - action: utter_SECURITY_MANNED_CCTV__HVAC
+
+- story: ELECTRICAL__Fire_Safety
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__Fire_Safety
+  - action: utter_ELECTRICAL__Fire_Safety
+
+- story: ELECTRICAL__Electrical
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__Electrical
+  - action: utter_ELECTRICAL__Electrical
+
+- story: ELECTRICAL__Man_In_Van
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ELECTRICAL__Man_In_Van
+  - action: utter_ELECTRICAL__Man_In_Van
